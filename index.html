@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibhav Singh - Game Developer</title>
+    <title>VIBHAV SINGH - Game Developer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
     <style>
         * {
             margin: 0;
@@ -12,532 +13,512 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
             color: #fff;
-            overflow-x: hidden;
             line-height: 1.6;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
 
-        /* Header */
         header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10, 10, 10, 0.9);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 20px 0;
-            transition: all 0.3s ease;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 20px rgba(0, 245, 255, 0.5);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: #00f5ff;
-            transform: translateY(-2px);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            background: radial-gradient(circle at 30% 70%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 70% 30%, rgba(0, 245, 255, 0.1) 0%, transparent 50%);
-        }
-
-        .hero-content {
-            z-index: 2;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #fff, #00f5ff, #ff00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 20px rgba(0, 245, 255, 0.5); }
-            to { text-shadow: 0 0 30px rgba(255, 0, 255, 0.8); }
-        }
-
-        .hero p {
-            font-size: 1.4rem;
-            margin-bottom: 30px;
-            color: #ccc;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 245, 255, 0.3);
-        }
-
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            transition: left 0.5s;
-        }
-
-        .cta-button:hover::before {
-            left: 100%;
-        }
-
-        /* Floating particles */
-        .particle {
-            position: absolute;
-            background: #00f5ff;
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
-
-        /* Projects Section */
-        .projects {
-            padding: 100px 0;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .section-title {
             text-align: center;
-            font-size: 3rem;
-            margin-bottom: 60px;
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 20px;
+            margin-bottom: 50px;
+            box-shadow: 0 30px 80px rgba(138, 43, 226, 0.5);
+            border: 3px solid #8a2be2;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff00ff, #00ffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-top: 60px;
-        }
-
-        .project-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, #00f5ff, #ff00ff, #00f5ff);
-            background-size: 200% 100%;
-            animation: rainbow 3s linear infinite;
-        }
-
-        @keyframes rainbow {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 200% 50%; }
-        }
-
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 245, 255, 0.2);
-        }
-
-        .project-card h3 {
-            font-size: 1.5rem;
+            background-clip: text;
             margin-bottom: 15px;
-            color: #00f5ff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
         }
 
-        .project-card p {
-            color: #ccc;
-            margin-bottom: 20px;
+        .tagline {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
         }
 
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .tag {
-            background: rgba(0, 245, 255, 0.2);
-            color: #00f5ff;
-            padding: 5px 15px;
+        .profile-summary {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 40px 50px;
+            margin-bottom: 40px;
             border-radius: 20px;
-            font-size: 0.8rem;
-            border: 1px solid rgba(0, 245, 255, 0.3);
+            box-shadow: 0 20px 60px rgba(138, 43, 226, 0.4);
+            border: 2px solid #8a2be2;
         }
 
-        /* Skills Section */
-        .skills {
-            padding: 100px 0;
+        .profile-summary p {
+            font-size: 1.2em;
+            line-height: 1.9;
+            color: #d0d0d0;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 50px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(138, 43, 226, 0.4);
+            border: 2px solid #8a2be2;
+        }
+
+        h2 {
+            font-size: 2.8em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff00ff, #00ffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 35px;
+            padding-bottom: 15px;
+            border-bottom: 4px solid #00ffff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            margin-top: 60px;
+            margin-top: 40px;
         }
 
-        .skill-item {
-            text-align: center;
-            padding: 30px 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .skill-card {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.8) 0%, rgba(22, 33, 62, 0.8) 100%);
+            padding: 40px 30px;
+            border-radius: 20px;
+            border: 2px solid #8a2be2;
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.4);
             transition: all 0.3s ease;
+            text-align: center;
         }
 
-        .skill-item:hover {
-            transform: scale(1.05);
-            background: rgba(255, 255, 255, 0.1);
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: #ff00ff;
+            box-shadow: 0 20px 50px rgba(255, 0, 255, 0.6);
         }
 
         .skill-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 100px 0;
-            background: rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        .contact-links {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
             display: flex;
+            align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            border-radius: 15px;
+            border: 2px solid #ff00ff;
+        }
+
+        .skill-icon svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        .skill-title {
+            font-size: 1.6em;
+            font-weight: 900;
+            color: #fff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .skill-subtitle {
+            font-size: 1em;
+            color: #b0b0b0;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 40px;
             margin-top: 40px;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            border: 3px solid #8a2be2;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(138, 43, 226, 0.7);
+            border-color: #ff00ff;
+        }
+
+        .project-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #666;
+            border-bottom: 3px solid #8a2be2;
+            position: relative;
+        }
+
+        .project-image::before {
+            content: '🎮';
+            font-size: 5em;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #ff00ff;
+        }
+
+        .project-header h3 {
+            font-size: 2.2em;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+        }
+
+        .project-meta {
+            font-size: 0.9em;
+            color: #d0d0d0;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        .project-body {
+            padding: 30px;
+        }
+
+        .project-description {
+            color: #c0c0c0;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        .project-features {
+            margin-bottom: 25px;
+        }
+
+        .project-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-features li {
+            color: #b0b0b0;
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 1em;
+        }
+
+        .project-features li::before {
+            content: '▸';
+            color: #ff00ff;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 12px;
             flex-wrap: wrap;
         }
 
-        .contact-link {
-            display: inline-block;
-            padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.1);
+        .tech-tag {
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1em;
             color: #fff;
+            font-weight: 900;
+            border: 2px solid #ff00ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s ease;
+        }
+
+        .tech-tag:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            text-align: center;
+            font-size: 1.3em;
+            color: #c0c0c0;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .contact-info a {
+            color: #00ffff;
             text-decoration: none;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-weight: 900;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            padding: 12px 25px;
+            border: 2px solid #00ffff;
+            border-radius: 25px;
+            display: inline-block;
+            transition: all 0.2s ease;
         }
 
-        .contact-link:hover {
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
-            color: #000;
-            transform: translateY(-3px);
+        .contact-info a:hover {
+            color: #ff00ff;
+            border-color: #ff00ff;
+            text-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+            transform: scale(1.05);
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
+            h1 {
+                font-size: 2.5em;
             }
-            
-            .hero p {
-                font-size: 1.1rem;
+
+            .section {
+                padding: 30px;
             }
-            
-            .nav-links {
-                display: none;
+
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
-            
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-            
-            .contact-links {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-        /* Scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">Vibhav Singh</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>🎮 SINGHSAAB</h1>
+            <p class="tagline">GAME DEVELOPER | UNITY & C#</p>
+        </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Game Developer</h1>
-                <p>Creating immersive worlds and unforgettable gaming experiences</p>
-                <a href="#projects" class="cta-button">View My Work</a>
-            </div>
+        <div class="profile-summary">
+            <p>
+                Enthusiastic and detail-oriented Game Developer Fresher with hands-on experience in Unity and C#. 
+                Skilled in building engaging 2D and 3D gameplay systems, implementing responsive controls, and 
+                polishing player experience. Passionate about creating fun, visually appealing, and performance-optimized 
+                games while continuously learning advanced game dev concepts.
+            </p>
         </div>
-        <!-- Floating particles -->
-        <div class="particle" style="top: 20%; left: 10%; width: 6px; height: 6px; animation-delay: 0s;"></div>
-        <div class="particle" style="top: 60%; left: 80%; width: 8px; height: 8px; animation-delay: 2s; background: #ff00ff;"></div>
-        <div class="particle" style="top: 80%; left: 20%; width: 4px; height: 4px; animation-delay: 4s;"></div>
-        <div class="particle" style="top: 30%; left: 70%; width: 10px; height: 10px; animation-delay: 1s; background: #ff00ff;"></div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title fade-in">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <h3>3D Endless Runner Game</h3>
-                    <p>Built a complete 3D endless runner experience from scratch using Unity and C#. The game features smooth player movement, obstacle and coin spawning, real-time score updates, and animated character control. Implemented object pooling for ground and collectibles to ensure performance efficiency. Includes restart & quit UI functionality, dynamic camera follow, and basic game management system — optimized for showcasing game development fundamentals and clean code architecture.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Unity</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">3D</span>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <h3>Tic Tac Toe</h3>
-                    <p>Developed a complete 2D Tic Tac Toe game implementing turn-based logic, interactive UI, and game flow management using C#.
-Demonstrated skills in event handling, GameManager architecture, and clean UI scripting.
-(Beginner project – foundational for advanced gameplay systems.)</p>
-                    <div class="tech-tags">
-                        <span class="tag">Unity</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">2D</span>
-                    </div>
-                </div>
-                <div class="project-card fade-in">
-                    <h3>2D Platformer Game</h3>
-                    <p>Built a complete 2D platformer from scratch using Unity 6 and C#. Implemented player mechanics — movement,
-attack, and death animation with physics control. Designed intelligent enemy behavior with detection, attack logic,
-and fade-out death effects. Created Game Over system and UI that dynamically freezes gameplay on player
-death. Focused on gameplay polish: smooth animations, event-based logic, and responsive controls. Skills:
-Animation Handling, OOP Inheritance, Coroutines, Game State Management, Gameplay Polish.</p>
-                    <div class="tech-tags">
-                        <span class="tag">Unity</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">2D</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title fade-in">Skills & Expertise</h2>
+        <section class="section">
+            <h2>💻 TECHNICAL SKILLS</h2>
             <div class="skills-grid">
-                <div class="skill-item fade-in">
-                    <div class="skill-icon">🎮</div>
-                    <h3>Game Design</h3>
-                    <p>Mechanics, UI, UX</p>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">Game Engine</div>
+                    <div class="skill-subtitle">Unity (2D & 3D)</div>
                 </div>
-                <div class="skill-item fade-in">
-                    <div class="skill-icon">⚡</div>
-                    <h3>Unity Engine</h3>
-                    <p>Gaining experience</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M8 11h8M8 15h8"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">Programming</div>
+                    <div class="skill-subtitle">C#, OOP, Coroutines, Physics System</div>
                 </div>
-                <div class="skill-item fade-in">
-                    <div class="skill-icon">💻</div>
-                    <h3>Programming</h3>
-                    <p>C#</p>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">Game Design</div>
+                    <div class="skill-subtitle">Player Controls, Enemy AI, Animation Handling, Scene Management</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">UI/UX</div>
+                    <div class="skill-subtitle">Game Over UI, Score Systems, Smooth Transitions</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6"/>
+                            <path d="M17 7l-5 5-5-5m0 10l5-5 5 5"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">Version Control</div>
+                    <div class="skill-subtitle">Git & GitHub</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <path d="M9 3v18M15 3v18M3 9h18M3 15h18"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">Other Tools</div>
+                    <div class="skill-subtitle">Photopea, Audacity (basic), Visual Studio</div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="skill-title">Concepts</div>
+                    <div class="skill-subtitle">Object Pooling, Event Systems, Inheritance, Game Loop Logic</div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title fade-in">Let's Create Something Amazing</h2>
-            <p class="fade-in">Ready to bring your game ideas to life? Let's collaborate!</p>
-            <div class="contact-links fade-in">
-                <a href="mailto:vibhavsingh2004@gmail.com" class="contact-link">vibhavsingh2004@gmail.com</a>
-                <a href="#" class="contact-link">https://www.linkedin.com/in/vibhav-singh-25a3122a1</a>
-                <a href="#" class="contact-link">https://github.com/singhsaab-gamedev/singhsaab-gamedev.github.io</a>
-                <a href="#" class="contact-link">https://singhsaab-gamedev.github.io/</a>
+        <section class="section">
+            <h2>🎮 GAME DEVELOPMENT PROJECTS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        [Game Screenshot Placeholder]
+                    </div>
+                    <div class="project-header">
+                        <h3>2D PLATFORMER GAME</h3>
+                        <div class="project-meta">Unity 6 | C#</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Built a complete 2D platformer from scratch using Unity 6 and C#.
+                        </p>
+                        <div class="project-features">
+                            <ul>
+                                <li>Implemented player mechanics — movement, attack, and death animation with physics control</li>
+                                <li>Designed intelligent enemy behavior with detection, attack logic, and fade-out death effects</li>
+                                <li>Created Game Over system and UI that dynamically freezes gameplay on player death</li>
+                                <li>Focused on gameplay polish: smooth animations, event-based logic, and responsive controls</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">UNITY 6</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">2D</span>
+                            <span class="tech-tag">OOP</span>
+                            <span class="tech-tag">ANIMATION</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        [Game Screenshot Placeholder]
+                    </div>
+                    <div class="project-header">
+                        <h3>3D ENDLESS RUNNER GAME</h3>
+                        <div class="project-meta">Unity 6 | C#</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Built a complete 3D endless runner experience from scratch using Unity and C#.
+                        </p>
+                        <div class="project-features">
+                            <ul>
+                                <li>The game features smooth player movement, obstacle and coin spawning, real-time score updates, and animated character control</li>
+                                <li>Implemented object pooling for ground and collectibles to ensure performance efficiency</li>
+                                <li>Includes restart & quit UI functionality, dynamic camera follow, and basic game management system</li>
+                                <li>Optimized for showcasing game development fundamentals and clean code architecture</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">UNITY 6</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">3D</span>
+                            <span class="tech-tag">POOLING</span>
+                            <span class="tech-tag">OPTIMIZATION</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        [Game Screenshot Placeholder]
+                    </div>
+                    <div class="project-header">
+                        <h3>TIC TAC TOE</h3>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            A classic strategy game featuring intuitive gameplay mechanics, smart AI opponent, 
+                            and polished user interface. Built with clean code architecture and engaging animations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">UNITY</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">2D</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(10, 10, 10, 0.95)';
-            } else {
-                header.style.background = 'rgba(10, 10, 10, 0.9)';
-            }
-        });
-
-        // Parallax effect for particles
-        window.addEventListener('scroll', () => {
-            const particles = document.querySelectorAll('.particle');
-            const scrolled = window.pageYOffset;
-            
-            particles.forEach((particle, index) => {
-                const speed = (index + 1) * 0.5;
-                particle.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-        });
-
-        // Dynamic particle creation
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.position = 'fixed';
-            particle.style.top = Math.random() * window.innerHeight + 'px';
-            particle.style.left = Math.random() * window.innerWidth + 'px';
-            particle.style.width = (Math.random() * 6 + 2) + 'px';
-            particle.style.height = particle.style.width;
-            particle.style.background = Math.random() > 0.5 ? '#00f5ff' : '#ff00ff';
-            particle.style.borderRadius = '50%';
-            particle.style.pointerEvents = 'none';
-            particle.style.zIndex = '1';
-            particle.style.animation = `float ${Math.random() * 3 + 3}s ease-in-out infinite`;
-            
-            document.body.appendChild(particle);
-            
-            setTimeout(() => {
-                particle.remove();
-            }, 6000);
-        }
-
-        // Create particles periodically
-        setInterval(createParticle, 2000);
-    </script>
+        <section class="section">
+            <h2>📧 CONTACT</h2>
+            <div class="contact-info">
+                <p>Let's create something AMAZING together!</p>
+                <p><a href="mailto:vibhavsingh2004@gmail.com">vibhavsingh2004@gmail.com</a></p>
+            </div>
+        </section>
+    </div>
 </body>
-
 </html>
-
-
