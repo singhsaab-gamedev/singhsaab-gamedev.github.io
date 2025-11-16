@@ -155,7 +155,7 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
             gap: 40px;
             margin-top: 40px;
         }
@@ -166,7 +166,7 @@
             overflow: hidden;
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
             border: 3px solid #8a2be2;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
@@ -177,23 +177,20 @@
 
         .project-image {
             width: 100%;
-            height: 280px;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-bottom: 3px solid #8a2be2;
             background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.4em;
-            font-weight: 700;
-            color: #666;
-            border-bottom: 3px solid #8a2be2;
-            position: relative;
-            overflow: hidden;
         }
 
         .project-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             display: block;
         }
 
@@ -206,17 +203,17 @@
         }
 
         .project-header h3 {
-            font-size: 2.2em;
+            font-size: 2em;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 3px;
             text-shadow: 0 0 15px rgba(255, 0, 255, 0.6);
+            margin-bottom: 8px;
         }
 
         .project-meta {
-            font-size: 0.9em;
+            font-size: 1em;
             color: #d0d0d0;
-            margin-top: 8px;
             font-weight: 600;
         }
 
@@ -247,6 +244,7 @@
             padding-left: 25px;
             position: relative;
             font-size: 1em;
+            line-height: 1.6;
         }
 
         .project-features li::before {
@@ -268,7 +266,7 @@
             background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
             padding: 10px 20px;
             border-radius: 25px;
-            font-size: 1em;
+            font-size: 0.95em;
             color: #fff;
             font-weight: 900;
             border: 2px solid #ff00ff;
@@ -400,7 +398,6 @@
                             <path d="M17 7l-5 5-5-5m0 10l5-5 5 5"/>
                         </svg>
                     </div>
-                    <div class="skill-title">Version Control</div>
                     <div class="skill-subtitle">Git & GitHub</div>
                 </div>
 
@@ -412,7 +409,7 @@
                         </svg>
                     </div>
                     <div class="skill-title">Other Tools</div>
-                    <div class="skill-subtitle">Photopea, Audacity (basic), Visual Studio</div>
+                    <div class="skill-subtitle">Photopea, Visual Studio</div>
                 </div>
 
                 <div class="skill-card">
@@ -431,10 +428,10 @@
         <section class="section">
             <h2>🎮 GAME DEVELOPMENT PROJECTS</h2>
             <div class="projects-grid">
+                <!-- Project 1: 2D Platformer -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/platformer.png" alt="2D Platformer Game Screenshot" style="width: 100%; height: 100%; object-fit: cover;">
-
+                        <img src="images/platformer.png" alt="2D Platformer Game Screenshot">
                     </div>
                     <div class="project-header">
                         <h3>2D PLATFORMER GAME</h3>
@@ -462,9 +459,10 @@
                     </div>
                 </div>
 
+                <!-- Project 2: 3D Endless Runner -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/runner.png" alt="3D Endless Runner Game Screenshot"  style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/runner.png" alt="3D Endless Runner Game Screenshot">
                     </div>
                     <div class="project-header">
                         <h3>3D ENDLESS RUNNER GAME</h3>
@@ -492,11 +490,13 @@
                     </div>
                 </div>
 
+                <!-- Project 3: Tic Tac Toe -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/tictactoe.png" alt="Tic Tac Toe Game Screenshot"  style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/tictactoe.png" alt="Tic Tac Toe Game Screenshot">
                     </div>
-                    <h3>TIC TAC TOE (MULTIPLAYER) GAME</h3>
+                    <div class="project-header">
+                        <h3>TIC TAC TOE (MULTIPLAYER) GAME</h3>
                         <div class="project-meta">Unity 6 | C#</div>
                     </div>
                     <div class="project-body">
@@ -519,6 +519,41 @@
                             <span class="tech-tag">UI/UX</span>
                             <span class="tech-tag">GAME LOGIC</span>
                             <span class="tech-tag">CLEAN ARCHITECTURE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Simple Car Racing Game -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/carracing.png" alt="Simple Car Racing Game Screenshot">
+                    </div>
+                    <div class="project-header">
+                        <h3>SIMPLE CAR RACING GAME</h3>
+                        <div class="project-meta">Unity 6 | C#</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Built a complete 3D car racing experience from scratch using Unity 6 and C#, featuring realistic vehicle physics and dynamic traffic systems.
+                        </p>
+                        <div class="project-features">
+                            <ul>
+                                <li>Implemented single car controller with realistic wheel colliders for authentic driving feel and proper rotation mechanics</li>
+                                <li>Created dynamic traffic spawning system with automatic vehicle generation for immersive racing environment</li>
+                                <li>Developed camera follow system and brake mechanics for enhanced player control and gameplay experience</li>
+                                <li>Implemented optimized spawning system for ground and environment using object pooling for performance efficiency</li>
+                                <li>Designed comprehensive UI displaying real-time score, speed, and distance with main menu, garage, and Try Again functionality</li>
+                                <li>Added collision detection system with Game Over UI and proper restart mechanism using TimeScale for smooth game-state management</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">UNITY 6</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">3D</span>
+                            <span class="tech-tag">PHYSICS</span>
+                            <span class="tech-tag">SPAWNING</span>
+                            <span class="tech-tag">UI/UX</span>
+                            <span class="tech-tag">OPTIMIZATION</span>
                         </div>
                     </div>
                 </div>
